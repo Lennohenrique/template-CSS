@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #565f81;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, #4fa8d4, #F2BAE8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
+}
+
+.container{
+    min-height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    border-radius: 2rem;
+    box-shadow: rgba(0, 20, 0, 0.1) 0px 4px 16px, rgba(0, 0, 20, 0.3) 0px 8px 24px, rgba(0, 0, 0, 0.3) 0px 16px 56px;
+    
+}
+
+/* DIVS PARA DIVIDIR O CONTAINER */
+.profile{
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.box{
+    width: 75%;
+    height: 100%;
+    grid-template-columns: 2fr;
+    padding-left: 0px;
+}
+/* FIM DAS DIVS PARA DIVIDIR O CONTAINER */
+
+/* CONFIGURAÇÃO DA DIV PROFILE */
+.profile h2{
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    text-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.profile p{
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.profile img{
+    margin: auto;
+}
+
+
+.avatar{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.avatar img{
+    width:200px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.dados p{
+    margin: 10px;
+}
+
+.link a{
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+.link{
+    display: inline;
+    justify-content: space-between;
+    grid-template-rows: 1fr;
+    margin: auto;
+}
+
+.link img{
+    width: 2rem;
+    height: 2rem;
+    margin: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 100%;
+}
+ 
+.link img:hover{
+    transform: scale(130%);
+    transition: all .2;
+}
+/* FIM DAS CONFIGURAÇÕES DO PROFILE */
+
+/* CONFIGURAÇÃO SOBRE*/
+.sobre{
+    margin-bottom: 0;
+    padding: 25px;
+    height: 25%;
+    text-align: justify;
+}
+
+.sobre h2{
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+/* FIM DAS CONFIGURAÇÕES SOBRE */
+
+/* CONFIGURAÇÃO DO BANNER */
+.container_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.banner{
+    border-radius: 1rem;
+    background:linear-gradient(45deg, red, blue, green); 
+    background-size: 500% 100%;
+    animation: degrade 10s infinite alternate-reverse;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+ /* ANIMAÇÃO DE FUNDO DO BANNER*/
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+/* FIM DA ANIMAÇÃO */
+
+.ideia_banner{
+    flex: 1 1 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+.ideia_banner img{
+    width: 80%;
+}
+
+.texto{
+    flex: 1 1 150px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.texto h2{
+    color: #f8f8f0;
+    font-size: 20px;
+}
+
+.texto h3{
+    color: #f8f8f0;
+    font-size: 20px;
+}
+
+.texto p{
+    color: #f8f8f0;
+    font-size: 20x;
+    padding: 10px 0;
+}
+
+.botao{
+    display: block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    border-radius: 2rem;
+    background: #f8f8f0;
+    color: black;
+    margin: 10px auto;
+    text-decoration: none;
+}
+
+.texto a:hover{
+    background: #565f81;
+    color: #f8f8f0;
+}
+
+.dev_banner{
+    position: relative;
+    bottom:-33px;
+    padding: 10px;
+    flex: 1 1 150px;
+}
+
+.dev_banner img{
+    width: 100%;
+}
+ /* FIM DAS CONFIGURAÇÕES DO BANNER */
+
+ /*MEDIA QUERY */
+@media (max-width: 1200px){
+    .texto h2{
+        font-size: 15px;
+    }
+    .texto h3{
+        font-size: 15px;
+    }
+
+    .texto p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 965px){
+
+    .container{
+        min-height: 60vh;
+    }
+    .ideia_banner{
+        display: none;
+    }
+
+    .profile{
+        width: 40%;
+    }
+
+    .profile h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 780px){
+    .container{
+        display: block;
+        justify-content: center;
+    }
+
+    .profile{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+
+    .profile h2{
+        font-size: 40px;
+    }
+
+    .profile p{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+     .link a{
+    margin-left: 15px;
+    }
+
+}
+/* FIM DAS MEDIA QUERY */
